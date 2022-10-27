@@ -24,6 +24,6 @@ class Lyric(models.Model):
 
     def __str__(self):
         if len(self.content) > 30:
-            return f"{self.content[0:30]}"
+            return f"{self.content[0:30]}..."
         else:
             return f"{self.content}"
